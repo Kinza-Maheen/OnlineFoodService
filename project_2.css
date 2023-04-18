@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-family: 'Tilt Warp', cursive;
+}
+.navDiv{display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-family: 'Tilt Warp', cursive;
+z-index: 2;}
+/* Navigation Bar:logo and image */
+#logo {
+    margin: 7px 15px 7px 23px;
+}
+
+#logo img {
+    /* height: 75px; */
+    width: 75px;
+    margin: 9px 5px;
+}
+
+/* Navigation Bar:list items */
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 233px;
+    color: white;
+    height: 475px;
+    font-family: 'Tilt Warp', cursive;
+
+}
+
+/* .h-primary p{
+        padding: 0px 174px;
+        text-align: center;
+        
+} */
+#home::before {
+    content: "";
+    background: url('img4.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.89;
+    z-index: -1;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.1rem;
+
+}
+
+/* primary class */
+.h-primary {
+    font-size: 3.4rem;
+    padding: 10px;
+}
+
+.btn {
+    padding: 7px 20px;
+    color: white;
+    margin: 28px 0px;
+    border: 2px solid rgb(133, 27, 80);
+    background-color: rgb(133, 27, 80);
+    font-size: 1.3rem;
+    font-family: 'Tilt Warp', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* .center{
+    text-align: center;
+} */
+/* Sevices classes */
+.h2-primary{
+    text-align: center;
+    font-size: 2.95rem;
+    padding: 15px;
+    font-family: 'Tilt Warp', cursive;
+}
+/* h2.secondary */
+.h2-secondary{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px;
+
+}
+#services{
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+}
+#services .box{
+    /* margin: 20px; */
+    border-radius: 10px;
+    padding: 18px;
+    margin: 25px;
+    border: 2px solid black;
+    /* height: 290px; */
+    width: 350px;
+    font-family: 'Tilt Warp', cursive;
+    
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-size: 13px;
+    /* text-align: center; */
+}
+/* Clients section */
+#client-section{
+    height: 344px;
+   
+   
+}
+#client-section::before {
+    content: "";
+    background: url('bg3.jpg') no-repeat center center/cover;
+    width: 100%;
+    /* background-image: 300px; */
+    height:344px;
+    max-height: 344px;
+    position: absolute;
+    opacity: 0.59;
+    z-index: -1;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 2.8rem;
+}
+#clients .client-items{
+    padding: 25px;
+    
+}
+#clients .client-items img{
+    cursor: pointer;
+    height: 80px;
+    width: 80px;  
+}
+/* Contact section */
+#contact{
+      /* position: relative; */
+      height: 700px;
+      
+}
+#contact::before{
+    content: "";
+    background: url('contact7.jpg') no-repeat center center/cover;
+    filter: invert(90%);
+    width: 100%;
+    height:700px;
+    max-height:700px;
+    position: absolute;
+    opacity: 0.49;
+    z-index: -1;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+#contact-box .inp{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+    border: none; 
+    box-shadow: none;
+    border-radius: 9px; 
+    font-size: 1.1rem;
+    font-family: 'Tilt Warp', cursive;
+    
+}
+
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    display: flex;
+    font-family: 'Tilt Warp', cursive;
+}
+
+/* footer section */
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+}
